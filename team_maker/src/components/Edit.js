@@ -20,14 +20,14 @@ export const Edit = (props) => {
     });
     const { characters, editCharacter } = useContext(GlobalContext);
     const history = useHistory();
-    const currentUserId = props.match.params.id;
+    const currentCharacterId = props.match.params.id;
 
     useEffect(() => {
         const characterId = currentCharacterId;
         const selectedCharacter = characters.find(character => character.id === characterId)
 
         setSelectedCharacter(selectedCharacter)
-    }, [currentCharacterIdId, characters])
+    }, [currentCharacterId, characters])
 
     const onSubmit = () => {
     editCharacter(selectedCharacter)

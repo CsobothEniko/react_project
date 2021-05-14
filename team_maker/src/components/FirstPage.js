@@ -3,7 +3,7 @@ import { GlobalProvider } from '../context/GlobalState';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-export const First_page = () => {
+export const FirstPage = () => {
     return (
         <div style={{ maxWidth: "17rem", margin: "4rem auto" }}>
             <h1> Welcome guy! </h1>

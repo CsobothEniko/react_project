@@ -31,12 +31,12 @@ export const AddCharacter = () => {
     const history = useHistory();
 
     const onSubmit = () => {
-        const newUser = {
+        const newCharacter = {
             "id": uuid(),
             "name": name,
             "quote" : quote
         }
-        addUser(newUser);
+        addCharacter(newCharacter);
         history.push('/home');
     }
 
