@@ -21,7 +21,7 @@ export const Login = () => {
                     email: details.email
                 });
             }else{
-                
+
                 setError("DETAILS DON'T MATCH :( ");
             }
         }
